@@ -5,6 +5,7 @@ import Burger from '../../Components/Burger/Burger';
 import BuildControls from '../../Components/Burger/BuildControls/BuildControls';
 import Modal from '../../Components/UI/Modal/Modal';
 import OrderSummary from '../../Components/Burger/OrderSummary/OrderSummary';
+import withErrorHandler from '../../HOC/withErrorHandler/withErrorHandler';
 import Axios from '../../axios-order';
 import Spinner from '../../Components/UI/Spinner/Spineer';
 
@@ -16,7 +17,7 @@ const INGREDIENT_PRICES={
 
 }
 
-export default class BurgerBuilder extends Component {
+ class BurgerBuilder extends Component {
     // constructor(props){
     //     super(props);
     //     this.state={
@@ -150,3 +151,5 @@ export default class BurgerBuilder extends Component {
         )
     }
 }
+
+export default withErrorHandler(BurgerBuilder,Axios);
