@@ -1,7 +1,7 @@
 .Loader {
-    color: #521751;
+    color: #703B09;
     font-size: 20px;
-    margin: 100px auto;
+    margin: 200px auto;
     width: 1em;
     height: 1em;
     border-radius: 50%;
@@ -12,6 +12,7 @@
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
+    
   }
   @-webkit-keyframes load4 {
     0%,
