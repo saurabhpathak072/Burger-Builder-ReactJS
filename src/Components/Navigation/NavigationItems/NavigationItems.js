@@ -8,12 +8,15 @@ function NavigationItems(props) {
         <ul className={classes.NavigationItems}>
            <NavigationItem
             link="/"
-            active>
+            exact
+            >
                Burger Builder
            </NavigationItem>
            <NavigationItem
-            link="/">
-               Check Out
+            link="/orders"
+            
+            >
+               Orders
            </NavigationItem>
         </ul>
     )
